@@ -287,7 +287,7 @@ function Editor({ post }) {
       <Head>
         <title>
           {clientPost.title
-            ? `Editing post: ${clientPost.title} / OSPress`
+            ? `Editing post: ${clientPost.title} / Espresso`
             : 'Editing...'}
         </title>
         <link
@@ -505,7 +505,7 @@ function Editor({ post }) {
                   rel="noreferrer"
                   href={`/${userdata.name}/${post.slug}`}
                 >
-                  ospress.co/{userdata.name}/{post.slug}
+                  espresso-murex.vercel.app/{userdata.name}/{post.slug}
                 </a>
               </p>
             ) : (

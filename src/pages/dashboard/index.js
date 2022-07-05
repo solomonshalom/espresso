@@ -176,7 +176,7 @@ Dashboard.getLayout = function DashboardLayout(page) {
       `}
     >
       <Head>
-        <title>Dashboard / OSPress</title>
+        <title>Dashboard / Espresso</title>
       </Head>
       {page}
     </Container>
