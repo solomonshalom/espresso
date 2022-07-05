@@ -1,10 +1,11 @@
 export const FIREBASE_CONFIG = {
-  apiKey: 'AIzaSyCcUtgsWozqWdcEXlcEP-ZAw9S90OoNNmE',
-  authDomain: 'urblog-c04e4.firebaseapp.com',
-  projectId: 'urblog-c04e4',
-  storageBucket: 'urblog-c04e4.appspot.com',
-  messagingSenderId: '76262652455',
-  appId: '1:76262652455:web:d72a5ef2f12854a0036c02',
+  apiKey: "AIzaSyAPgBFaHMrpAmdD85P3xKQtWfZ8bEnXHKQ",
+  authDomain: "espresso-f94df.firebaseapp.com",
+  projectId: "espresso-f94df",
+  storageBucket: "espresso-f94df.appspot.com",
+  messagingSenderId: "426698370233",
+  appId: "1:426698370233:web:daac3b9b7cda35a2937f68",
+  measurementId: "G-1R0V8S4J51"
 }
 
 export default FIREBASE_CONFIG

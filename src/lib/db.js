@@ -100,7 +100,7 @@ export async function createPostForUser(userId) {
     excerpt: '',
     content: '',
     author: userId,
-    published: false,
+    published: true,
     lastEdited: firebase.firestore.Timestamp.now(),
   })
 

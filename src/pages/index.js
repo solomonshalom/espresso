@@ -74,9 +74,9 @@ export default function Home() {
           }
         `}
       >
-        <li>No ads</li>
+        <li>Free</li>
         <li>No paywalls</li>
-        <li>Open-source</li>
+        <li>Minimal</li>
       </ul>
       {loading ? (
         <Button>
