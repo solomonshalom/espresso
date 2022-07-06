@@ -117,7 +117,7 @@ export default function Home() {
                   await setUser(cred.user.uid, {
                     name: cred.user.uid,
                     displayName: cred.user.displayName || 'Anonymous',
-                    about: 'Nothing to say about you.',
+                    about: 'Hiya! Just A User Here :D.',
                     posts: [],
                     photo: cred.user.photoURL,
                     readingList: [],
@@ -140,7 +140,7 @@ export default function Home() {
                   await setUser(cred.user.uid, {
                     name: cred.user.uid,
                     displayName: cred.user.displayName || 'Anonymous',
-                    about: 'Nothing to say about you.',
+                    about: 'Hiya! Just A User Here :D.',
                     posts: [],
                     photo: cred.user.photoURL,
                     readingList: [],
