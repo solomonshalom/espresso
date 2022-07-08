@@ -244,6 +244,7 @@ function Editor({ post }) {
       Text,
       Code,
       Color,
+      TextStyle, 
       Placeholder.configure({
         placeholder: "Your post's title...",
       }),
@@ -264,6 +265,7 @@ function Editor({ post }) {
       Text,
       Code,
       Color,
+      TextStyle, 
       Placeholder.configure({
         placeholder: 'A short excerpt describing your post...',
       }),
@@ -290,6 +292,7 @@ function Editor({ post }) {
       Placeholder,
       Code,
       Color,
+      TextStyle, 
     ],
     onUpdate: ({ editor: newEditor }) => {
       setClientPost(prevPost => ({ ...prevPost, content: newEditor.getHTML() }))
