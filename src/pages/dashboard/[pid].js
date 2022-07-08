@@ -164,7 +164,7 @@ function SelectionMenu({ editor }) {
           </button>
           <button
             onClick={() => editor.chain().focus().toggleCode().run()}
-            className={editor.isActive('strike') ? 'is-active' : ''}
+            className={editor.isActive('code') ? 'is-active' : ''}
           >
             <CodeIcon />
             </button>
@@ -242,7 +242,9 @@ function Editor({ post }) {
       Paragraph,
       Text,
       Code,
-      Highlight.configure({ multicolor: true }),
+      Highlight.configure({ 
+        multicolor: true 
+      }),
       Placeholder.configure({
         placeholder: "Your post's title...",
       }),
@@ -262,7 +264,9 @@ function Editor({ post }) {
       Paragraph,
       Text,
       Code,
-      Highlight.configure({ multicolor: true }),
+      Highlight.configure({ 
+        multicolor: true 
+      }),
       Placeholder.configure({
         placeholder: 'A short excerpt describing your post...',
       }),
@@ -288,7 +292,9 @@ function Editor({ post }) {
       Image,
       Placeholder,
       Code,
-      Highlight.configure({ multicolor: true }),
+      Highlight.configure({ 
+        multicolor: true 
+      }),
     ],
     onUpdate: ({ editor: newEditor }) => {
       setClientPost(prevPost => ({ ...prevPost, content: newEditor.getHTML() }))
