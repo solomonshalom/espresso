@@ -17,6 +17,7 @@ import {
   Link2Icon,
   LinkBreak2Icon,
   StrikethroughIcon,
+  CodeIcon,
 } from '@radix-ui/react-icons'
 import { useEditor, EditorContent, BubbleMenu } from '@tiptap/react'
 
@@ -158,6 +159,12 @@ function SelectionMenu({ editor }) {
             className={editor.isActive('strike') ? 'is-active' : ''}
           >
             <StrikethroughIcon />
+          </button>
+          <button
+            onClick={() => editor.chain().focus().toggleCode().run()}
+            className={editor.isActive('strike') ? 'is-active' : ''}
+          >
+            <CodeIcon />
           </button>
           {editor.isActive('link') ? (
             <button onClick={() => editor.chain().focus().unsetLink().run()}>
