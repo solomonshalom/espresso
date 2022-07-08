@@ -17,9 +17,6 @@ import {
   Link2Icon,
   LinkBreak2Icon,
   StrikethroughIcon,
-  CodeIcon,
-  FontStyleIcon,
-  CodeSandBoxIcon,
 } from '@radix-ui/react-icons'
 import { useEditor, EditorContent, BubbleMenu } from '@tiptap/react'
 
@@ -29,8 +26,7 @@ import Image from '@tiptap/extension-image'
 import Document from '@tiptap/extension-document'
 import Paragraph from '@tiptap/extension-paragraph'
 import Placeholder from '@tiptap/extension-placeholder'
-import CodeBlock from '@tiptap/extension-code-block'
-import Code from '@tiptap/extension-code'
+
 import * as Dialog from '@radix-ui/react-dialog'
 
 import firebase, { auth, firestore } from '../../lib/firebase'
@@ -53,13 +49,11 @@ function SelectionMenu({ editor }) {
       css={css`
         display: flex;
         align-items: center;
-
         border-radius: 0.5rem;
         box-shadow: 0 1rem 1rem var(--grey-1);
         background: var(--grey-5);
         color: var(--grey-1);
         padding: 0.5rem;
-
         input {
           background: none;
           border: none;
@@ -69,17 +63,14 @@ function SelectionMenu({ editor }) {
           font-family: 'Inter', sans-serif;
           font-size: 0.8rem;
         }
-
         input::placeholder {
           font-family: 'Inter', sans-serif;
           color: var(--grey-3);
           font-size: 0.8rem;
         }
-
         input:focus {
           outline: none;
         }
-
         button {
           margin: 0 0.5rem;
           background: none;
@@ -88,18 +79,15 @@ function SelectionMenu({ editor }) {
           height: 1rem;
           color: var(--grey-3);
         }
-
         button:focus,
         button.is-active {
           color: var(--grey-1);
         }
-
         html[data-theme='dark'] {
           button:hover {
             background: rgba(255, 255, 255, 0.1);
           }
         }
-
         html[data-theme='dark'] {
           button:hover {
             background: rgba(0, 0, 0, 0.1);
@@ -163,18 +151,6 @@ function SelectionMenu({ editor }) {
           >
             <StrikethroughIcon />
           </button>
-          <button
-            onClick={() => editor.chain().focus().toggleCode().run()}
-            className={editor.isActive('code') ? 'is-active' : ''}
-          >
-            <CodeIcon />
-            </button>
-            <button
-            onClick={() => editor.chain().focus().toggleCodeBlock().run()}
-            className={editor.isActive('codeBlock') ? 'is-active' : ''}
-          >
-            <CodeSandBoxIcon />
-            </button>
           {editor.isActive('link') ? (
             <button onClick={() => editor.chain().focus().unsetLink().run()}>
               <LinkBreak2Icon />
@@ -242,8 +218,6 @@ function Editor({ post }) {
       ParagraphDocument,
       Paragraph,
       Text,
-      Code,
-      CodeBlock,
       Placeholder.configure({
         placeholder: "Your post's title...",
       }),
@@ -262,8 +236,6 @@ function Editor({ post }) {
       ParagraphDocument,
       Paragraph,
       Text,
-      Code,
-      CodeBlock,
       Placeholder.configure({
         placeholder: 'A short excerpt describing your post...',
       }),
@@ -288,8 +260,6 @@ function Editor({ post }) {
       Link,
       Image,
       Placeholder,
-      Code,
-      CodeBlock,
     ],
     onUpdate: ({ editor: newEditor }) => {
       setClientPost(prevPost => ({ ...prevPost, content: newEditor.getHTML() }))
@@ -309,7 +279,7 @@ function Editor({ post }) {
       <Head>
         <title>
           {clientPost.title
-            ? `Editing post: ${clientPost.title} / Espresso`
+            ? `Editing post: ${clientPost.title} / OSPress`
             : 'Editing...'}
         </title>
         <link
@@ -326,11 +296,9 @@ function Editor({ post }) {
         css={css`
           display: flex;
           align-items: center;
-
           button:first-of-type {
             margin-left: auto;
           }
-
           button:last-child {
             margin-left: 1rem;
           }
@@ -469,16 +437,13 @@ function Editor({ post }) {
             <div
               css={css`
                 display: flex;
-
                 button {
                   margin-left: 0;
                   margin-right: 1rem;
                 }
-
                 button:last-child {
                   margin-right: auto;
                 }
-
                 button {
                   font-size: 0.9rem;
                 }
@@ -512,7 +477,6 @@ function Editor({ post }) {
                   font-size: 0.9rem;
                   max-width: 15rem;
                   word-wrap: break-word;
-
                   a {
                     text-decoration: none;
                     color: inherit;
@@ -527,7 +491,7 @@ function Editor({ post }) {
                   rel="noreferrer"
                   href={`/${userdata.name}/${post.slug}`}
                 >
-                  espresso-murex.vercel.app/{userdata.name}/{post.slug}
+                  ospress.co/{userdata.name}/{post.slug}
                 </a>
               </p>
             ) : (
@@ -587,7 +551,6 @@ function Editor({ post }) {
           .ProseMirror-focused {
             outline: none;
           }
-
           margin-bottom: 5rem;
         `}
       >
