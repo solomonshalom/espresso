@@ -26,7 +26,7 @@ import Image from '@tiptap/extension-image'
 import Document from '@tiptap/extension-document'
 import Paragraph from '@tiptap/extension-paragraph'
 import Placeholder from '@tiptap/extension-placeholder'
-
+import Code from '@tiptap/extension-code'
 import * as Dialog from '@radix-ui/react-dialog'
 
 import firebase, { auth, firestore } from '../../lib/firebase'
@@ -226,6 +226,7 @@ function Editor({ post }) {
       ParagraphDocument,
       Paragraph,
       Text,
+      Code,
       Placeholder.configure({
         placeholder: "Your post's title...",
       }),
@@ -244,6 +245,7 @@ function Editor({ post }) {
       ParagraphDocument,
       Paragraph,
       Text,
+      Code,
       Placeholder.configure({
         placeholder: 'A short excerpt describing your post...',
       }),
@@ -268,6 +270,7 @@ function Editor({ post }) {
       Link,
       Image,
       Placeholder,
+      Code,
     ],
     onUpdate: ({ editor: newEditor }) => {
       setClientPost(prevPost => ({ ...prevPost, content: newEditor.getHTML() }))
