@@ -29,8 +29,6 @@ import Document from '@tiptap/extension-document'
 import Paragraph from '@tiptap/extension-paragraph'
 import Placeholder from '@tiptap/extension-placeholder'
 import Code from '@tiptap/extension-code'
-import TextStyle from '@tiptap/extension-text-style'
-import { Color } from '@tiptap/extension-color'
 import * as Dialog from '@radix-ui/react-dialog'
 
 import firebase, { auth, firestore } from '../../lib/firebase'
@@ -169,12 +167,6 @@ function SelectionMenu({ editor }) {
           >
             <CodeIcon />
           </button>
-          <button
-            onClick={() => editor.chain().focus().setColor().run()}
-            className={editor.isActive('strike') ? 'is-active' : ''}
-          >
-            <ColorWheelIcon />
-          </button>
           {editor.isActive('link') ? (
             <button onClick={() => editor.chain().focus().unsetLink().run()}>
               <LinkBreak2Icon />
@@ -243,8 +235,6 @@ function Editor({ post }) {
       Paragraph,
       Text,
       Code,
-      Color,
-      TextStyle, 
       Placeholder.configure({
         placeholder: "Your post's title...",
       }),
@@ -264,8 +254,6 @@ function Editor({ post }) {
       Paragraph,
       Text,
       Code,
-      Color,
-      TextStyle, 
       Placeholder.configure({
         placeholder: 'A short excerpt describing your post...',
       }),
@@ -291,8 +279,6 @@ function Editor({ post }) {
       Image,
       Placeholder,
       Code,
-      Color,
-      TextStyle, 
     ],
     onUpdate: ({ editor: newEditor }) => {
       setClientPost(prevPost => ({ ...prevPost, content: newEditor.getHTML() }))
