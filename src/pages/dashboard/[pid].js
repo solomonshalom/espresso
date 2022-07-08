@@ -19,7 +19,7 @@ import {
   StrikethroughIcon,
   CodeIcon,
   FontStyleIcon,
-  CodeSandBoxLogo,
+  CodeSandBoxIcon,
 } from '@radix-ui/react-icons'
 import { useEditor, EditorContent, BubbleMenu } from '@tiptap/react'
 
