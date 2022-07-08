@@ -19,6 +19,7 @@ import {
   StrikethroughIcon,
   CodeIcon,
   FontStyleIcon,
+  CodeSandBoxLogo,
 } from '@radix-ui/react-icons'
 import { useEditor, EditorContent, BubbleMenu } from '@tiptap/react'
 
@@ -28,6 +29,7 @@ import Image from '@tiptap/extension-image'
 import Document from '@tiptap/extension-document'
 import Paragraph from '@tiptap/extension-paragraph'
 import Placeholder from '@tiptap/extension-placeholder'
+import CodeBlock from '@tiptap/extension-code-block'
 import Code from '@tiptap/extension-code'
 import * as Dialog from '@radix-ui/react-dialog'
 
@@ -167,6 +169,12 @@ function SelectionMenu({ editor }) {
           >
             <CodeIcon />
             </button>
+            <button
+            onClick={() => editor.chain().focus().toggleCodeBlock().run()}
+            className={editor.isActive('codeBlock') ? 'is-active' : ''}
+          >
+            <CodeSandBoxLogo />
+            </button>
           {editor.isActive('link') ? (
             <button onClick={() => editor.chain().focus().unsetLink().run()}>
               <LinkBreak2Icon />
@@ -235,6 +243,7 @@ function Editor({ post }) {
       Paragraph,
       Text,
       Code,
+      CodeBlock,
       Placeholder.configure({
         placeholder: "Your post's title...",
       }),
@@ -254,6 +263,7 @@ function Editor({ post }) {
       Paragraph,
       Text,
       Code,
+      CodeBlock,
       Placeholder.configure({
         placeholder: 'A short excerpt describing your post...',
       }),
@@ -279,6 +289,7 @@ function Editor({ post }) {
       Image,
       Placeholder,
       Code,
+      CodeBlock,
     ],
     onUpdate: ({ editor: newEditor }) => {
       setClientPost(prevPost => ({ ...prevPost, content: newEditor.getHTML() }))
