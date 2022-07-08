@@ -173,7 +173,7 @@ function SelectionMenu({ editor }) {
             onClick={() => editor.chain().focus().toggleCodeBlock().run()}
             className={editor.isActive('codeBlock') ? 'is-active' : ''}
           >
-            <CodeSandBoxLogo />
+            <CodeSandBoxIcon />
             </button>
           {editor.isActive('link') ? (
             <button onClick={() => editor.chain().focus().unsetLink().run()}>
