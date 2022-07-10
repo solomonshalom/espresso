@@ -98,7 +98,6 @@ export default function Home() {
           >
             Sign Out
           </Button>
-          <a href="https://www.producthunt.com/posts/rocket-espresso?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-rocket&#0045;espresso"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=351808&theme=dark" alt="Rocket&#0032;Espresso - An&#0032;ultra&#0045;minimal&#0032;platform&#0032;for&#0032;anybody&#0032;who&#0032;writes | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
         </div>
       ) : (
         <div
