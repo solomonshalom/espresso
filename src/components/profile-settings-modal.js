@@ -141,7 +141,7 @@ function Editor({ user }) {
       >
         See your profile live at:{' '}
         <a target="_blank" rel="noreferrer" href={`/${user.name}`}>
-        espresso-murex.vercel.app/{user.name}
+        rocketespresso.ml/{user.name}
         </a>
       </p>
 
