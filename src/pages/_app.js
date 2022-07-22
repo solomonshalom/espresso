@@ -9,7 +9,6 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
-    <meta name="google-site-verification" content="sD17kr1QoAH2Xd0zh6PZng3NKL6IGytdOdI8Ryj9jEA" />
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
