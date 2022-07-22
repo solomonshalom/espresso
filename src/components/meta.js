@@ -24,7 +24,8 @@ export default function meta({ title, description, url, image, type }) {
       <meta name="title" content={title} />
       <meta name="description" content={description} />
       <meta name="author" content="Solomon Shalom Lijo" />
-
+      <meta name="google-site-verification" content="sD17kr1QoAH2Xd0zh6PZng3NKL6IGytdOdI8Ryj9jEA" />
+      
       {/* Open Graph/Facebook */}
       <meta property="og:type" content={type || 'website'} />
       <meta property="og:url" content={url} />
