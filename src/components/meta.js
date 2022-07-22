@@ -42,3 +42,5 @@ export default function meta({ title, description, url, image, type }) {
     </>
   )
 }
+
+// Meta Tags

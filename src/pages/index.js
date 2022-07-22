@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import { css } from '@emotion/react'
 import { useAuthState } from 'react-firebase-hooks/auth'
-import MetaTags from 'react-meta-tags';
+
 import firebase, { auth } from '../lib/firebase'
 import { setUser, userWithIDExists } from '../lib/db'
 
