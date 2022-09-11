@@ -2,6 +2,7 @@
 //   meta({title: 'cool title', description: 'cool desc', url: '/cool'})
 // Instead of:
 //   <Meta title="cool title" description="cool desc" url="/cool" />
+import ScriptTag from 'react-script-tag';
 export default function meta({ title, description, url, image, type }) {
   // We prefix relative urls with the VERCEL_URL that vercel sets for us on deployments
   const baseUrl =
@@ -21,12 +22,12 @@ export default function meta({ title, description, url, image, type }) {
     <>
       {/* Primary meta tags */}
       <title>{title}</title>
-      <script async defer data-website-id="0056af33-5193-40ac-b24f-6a150942f618" src="https://umami-production-2bee.up.railway.app/umami.js"></script>
       <meta name="title" content={title} />
       <meta name="description" content={description} />
       <meta name="author" content="Solomon Shalom Lijo" />
       <meta name="google-site-verification" content="sD17kr1QoAH2Xd0zh6PZng3NKL6IGytdOdI8Ryj9jEA" />
-      
+      <ScriptTag isHydrating={true} type="text/javascript" data-website-id="0056af33-5193-40ac-b24f-6a150942f618" src="https://umami-production-2bee.up.railway.app/umami.js" />
+        
       {/* Open Graph/Facebook */}
       <meta property="og:type" content={type || 'website'} />
       <meta property="og:url" content={url} />
