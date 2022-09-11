@@ -21,6 +21,7 @@ export default function meta({ title, description, url, image, type }) {
     <>
       {/* Primary meta tags */}
       <title>{title}</title>
+      <script async defer data-website-id="0056af33-5193-40ac-b24f-6a150942f618" src="https://umami-production-2bee.up.railway.app/umami.js"></script>
       <meta name="title" content={title} />
       <meta name="description" content={description} />
       <meta name="author" content="Solomon Shalom Lijo" />
