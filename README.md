@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Espresso // Rocket Espresso
+![image](https://user-images.githubusercontent.com/71135230/208353098-75cc8198-944f-469f-9a36-5edbf21a59f5.png)
+An ultra-minimal platform for anybody who writes
 
-## Getting Started
-
-First, run the development server:
+# Development Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
+1. git clone https://github.com/solomonshalom/espresso
+
+2. cd espresso
+
+3. yarn install && yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+That should get frontend to open in your lovalhost, in-terms of backend (firebase), just create a ```.env``` file in the root of the project with the
+approriate variables. Once you have that filled up, everything should be setup!
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Notes - 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+By default, when you make a project in firebase for your application ```firestore database``` won't be by default set. So, please make sure you set it up as it will be storing the user and post data. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# License
 
-## Learn More
+This project is licenced under [Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)](https://creativecommons.org/licenses/by-nc-nd/3.0/) which states that
+under the following terms -
 
-To learn more about Next.js, take a look at the following resources:
+Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Non-Commercial — You may not use the material for commercial purposes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+No-Derivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
 
-## Deploy on Vercel
+## Notices
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Few had doubts regarding the No-derivatives rule being enforced so to answer what it truly means - it states that any If you remix, transform, or build upon the material, you may not distribute the modified material but you can open a pull-request to merge it to this repository. 
