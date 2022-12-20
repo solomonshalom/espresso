@@ -12,10 +12,10 @@ An ultra-minimal platform for anybody who writes
 3. yarn install && yarn dev
 ```
 
-That should get frontend to open in your lovalhost, in-terms of backend (firebase), just create a ```.env``` file in the root of the project with the
+That should get frontend to open in your localhost, in-terms of backend (firebase), just create a ```.env``` file in the root of the project with the
 approriate variables. Once you have that filled up, everything should be setup!
 
-## Notes - 
+## Notes
 
 By default, when you make a project in firebase for your application ```firestore database``` won't be by default set. So, please make sure you set it up as it will be storing the user and post data. 
 
