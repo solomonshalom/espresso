@@ -34,7 +34,7 @@ function SelectionMenu({ editor }) {
   const [editingLink, setEditingLink] = useState(false)
   const [url, setUrl] = useState('')
 
-  return (
+/*  return (
     <BubbleMenu
       editor={editor}
       css={css`
@@ -158,7 +158,7 @@ function SelectionMenu({ editor }) {
         </>
       )}
     </BubbleMenu>
-  )
+*/  
 }
 
 function Editor({ post }) {
