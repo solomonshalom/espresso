@@ -14,7 +14,6 @@
     "@radix-ui/react-icons": "^1.0.3",
     "@radix-ui/react-id": "^0.0.6",
     "@react-firebase/auth": "^0.2.10",
-    "@tiptap/extension-bubble-menu":"^2.0.3",
     "@babel/runtime": "^7.19.0",
     "firebase": "^8.7.1",
     "html-to-text": "^8.0.0",
