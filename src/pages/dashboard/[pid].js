@@ -523,7 +523,6 @@ function Editor({ post }) {
           font-weight: 500;
         `}
       >
-        <EditorContent editor={titleEditor} />
       </div>
 
       <div
@@ -534,7 +533,6 @@ function Editor({ post }) {
           color: var(--grey-4);
         `}
       >
-        <EditorContent editor={excerptEditor} />
       </div>
 
       <PostContainer
@@ -546,7 +544,6 @@ function Editor({ post }) {
         `}
       >
         {contentEditor && <SelectionMenu editor={contentEditor} />}
-        <EditorContent editor={contentEditor} />
       </PostContainer>
     </>
   )
