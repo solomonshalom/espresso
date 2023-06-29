@@ -3,7 +3,6 @@ import Head from 'next/head'
 import tinykeys from 'tinykeys'
 import { css } from '@emotion/react'
 import { useEffect, useState } from 'react'
-import StarterKit from '@tiptap/starter-kit'
 import router, { useRouter } from 'next/router'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useDocumentData } from 'react-firebase-hooks/firestore'
@@ -18,14 +17,6 @@ import {
   LinkBreak2Icon,
   StrikethroughIcon,
 } from '@radix-ui/react-icons'
-import { useEditor, EditorContent, BubbleMenu } from '@tiptap/react'
-
-import Text from '@tiptap/extension-text'
-import Link from '@tiptap/extension-link'
-import Image from '@tiptap/extension-image'
-import Document from '@tiptap/extension-document'
-import Paragraph from '@tiptap/extension-paragraph'
-import Placeholder from '@tiptap/extension-placeholder'
 
 import * as Dialog from '@radix-ui/react-dialog'
 

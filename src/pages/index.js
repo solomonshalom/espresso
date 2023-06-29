@@ -76,7 +76,7 @@ export default function Home() {
       >
         <li>Free</li>
         <li>No paywalls</li>
-       <a className="link-os"
+       <a className="link-os" style="text-decoration: none"
 href="https://github.com/solomonshalom/espresso"><li>Open Source</li></a>
       </ul>
       {loading ? (
