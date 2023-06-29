@@ -35,6 +35,7 @@ function SelectionMenu({ editor }) {
   const [url, setUrl] = useState('')
 }
 
+
 function Editor({ post }) {
   const [userdata] = useDocumentData(firestore.doc(`users/${post.author}`), {
     idField: 'id',
