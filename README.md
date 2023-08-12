@@ -1,4 +1,4 @@
-# Espresso // Rocket Espresso
+# Espresso // Rocket Espresso (Public Archive)
 ![image](https://user-images.githubusercontent.com/71135230/208353098-75cc8198-944f-469f-9a36-5edbf21a59f5.png)
 An ultra-minimal platform for anybody who writes
 
@@ -11,6 +11,8 @@ An ultra-minimal platform for anybody who writes
 
 3. yarn install && yarn dev
 ```
+
+*This project is officially terminated and under public archive, the new and updated version can be found here: [The Abyss](https://github.com/solomonshalom/the-abyss)
 
 That should get frontend to open in your localhost, in-terms of backend (firebase), just create a ```.env``` file in the root of the project with the
 approriate variables. Once you have that filled up, everything should be setup!
