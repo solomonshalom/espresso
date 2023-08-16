@@ -21,6 +21,8 @@ approriate variables. Once you have that filled up, everything should be setup!
 
 By default, when you make a project in firebase for your application ```firestore database``` won't be by default set. So, please make sure you set it up as it will be storing the user and post data. 
 
+This project was also taken from [ospress](https://ospress.co), the original codebase. At the time, the site wasn't exactly functional and I decided to continue it :D
+
 # License
 
 This project is licenced under [Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)](https://creativecommons.org/licenses/by-nc-nd/3.0/) which states that
